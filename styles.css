@@ -3,6 +3,16 @@
   src: url("src/FuturaProspero-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Superpose-Bold";
+  src: url("src/Superpose-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Superpose-Regular";
+  src: url("src/Superpose-Regular.woff") format("woff");
+}
+
 html {
   background-color: #d5d6cc;
   margin: 0;
@@ -15,6 +25,7 @@ html {
   padding: 5px;
   border-radius: 5px;
   border: none;
+  font-family: Superpose-Bold;
   font-weight: bold;
 }
 
@@ -38,10 +49,6 @@ html {
   display: block;
 }
 
-/* .dropdown-content a:hover {
-  background-color: #ddd;
-} */
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -59,4 +66,97 @@ nav {
   margin: 20px;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
+}
+
+.season-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seasonh1 {
+  font-size: 5em;
+  font-family: FuturaProspero;
+  width: 35vw;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -6px;
+  margin-top: -10px;
+}
+main h2 {
+  font-size: 3em;
+  font-family: FuturaProspero;
+  width: 35vw;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -6px;
+  border-bottom: 1px solid black;
+  width: 95vw;
+  padding-bottom: 10px;
+}
+
+.volcanoimg {
+  border-radius: 8px;
+  width: 95vw;
+}
+
+.image1 {
+  border-radius: 8px;
+  width: 50vw;
+}
+
+.principal-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.principal-section p {
+  font-family: Superpose-Regular;
+  margin: 10px;
+}
+
+.principal-section button {
+  background-color: black;
+  color: #d5d6cc;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: Superpose-Regular;
+  width: 45vw;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.principal-button-div {
+  text-align: center;
+}
+
+.principal-titles {
+  font-size: 5em;
+  font-family: FuturaProspero;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -6px;
+  border-bottom: 1px solid black;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.principal-date-section {
+  display: flex;
+  justify-content: space-around;
+  font-family: Superpose-Regular;
+  border-bottom: 1px solid black;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.principal-date-section div {
+  width: 20vw;
 }
