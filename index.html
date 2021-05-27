@@ -1,37 +1,106 @@
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>User Application</title>
-    </head>
-    <body>
-        <div id="app"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>User Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app"></div>
 
-        <!-- plugin initialization -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function(){
-                // create instance of a plugin
-                var elem = document.getElementById('app');
-                var instance = new UserList(elem, [
-                    {firstname: 'Ross', lastname: 'Geller'},
-                    {firstname: 'Monica', lastname: 'Geller'},
-                    {firstname: 'Chandler', lastname: 'Bing'},
-                    {firstname: 'Joey', lastname: 'Tribbiani'},
-                ]);
-
-                // initialize
-                instance.init();
-
-                // add new users
-                setTimeout(function(){
-                    instance.addUser({firstname: 'Rachel', lastname: 'Green'});
-
-                    setTimeout(function(){
-                        instance.addUser({firstname: 'Phoebe', lastname: 'Buffay'});
-                    }, 2000);
-                }, 2000);
-            });
-        </script>
-    </body>
+    <!-- plugin initialization -->
+    <script>
+      "src/index.js";
+    </script>
+    <nav>
+      <div>
+        <img src="./src/branding-two-lines-black.svg" alt="logo" />
+      </div>
+      <div>
+        <div class="dropdown">
+          <button class="dropbtn">Programmation</button>
+          <div class="dropdown-content">
+            <a href="#">Mot de la direction</a>
+            <a href="#">Saison 2020-2021</a>
+            <a href="#">Hors-série</a>
+            <a href="#">Calendrier</a>
+            <a href="#">Archives</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Billetterie</button>
+          <div class="dropdown-content">
+            <a href="#">Achat en ligne</a>
+            <a href="#">Tarifs et forfaits</a>
+            <a href="#">Groupes</a>
+            <a href="#">Cheques-cadeaux</a>
+            <a href="#">Autres offres</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Informations</button>
+          <div class="dropdown-content">
+            <a href="#">Coordonnées et acces</a>
+            <a href="#">Mesures sanitaires</a>
+            <a href="#">Cafe-bar du Prospero</a>
+            <a href="#">A proximite</a>
+            <a href="#">Devis techniques des salles</a>
+            <a href="#">Location</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Le Prospero</button>
+          <div class="dropdown-content">
+            <a href="#">Mandat et direction artistique</a>
+            <a href="#">Historique</a>
+            <a href="#">Equipe</a>
+            <a href="#">Le Groupe de la Veillée</a>
+            <a href="#">Actualités</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Communauté</button>
+          <div class="dropdown-content">
+            <a href="#">Rendez-vous du mecredi</a>
+            <a href="#">Artistes en résidence</a>
+            <a href="#">Autres activités</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <h1>SAISON 2020-2021</h1>
+      <img src="/src/volcano.jpg" alt="volcano" />
+      <h2>SCENE PRINCIPAL</h2>
+      <div>
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div>
+          <h1>THE ONE DOLLAR STORY</h1>
+          <div>
+            <p>12-30 janvier 2021</p>
+          </div>
+          <div>
+            <p>De Fabrice Melquiot</p>
+            <p>Mise en scène Roland Auzet</p>
+            <p>Avec Sophie Desmarais</p>
+            <p>Coproduction Le Groupe de la Veillée et Act Opus</p>
+          </div>
+          <p>
+            Au chevet de son père adoptif mourant, une jeune femme se voit
+            dévoiler un secret qui vient troubler l'histoire qu'elle a toujours
+            tenue pour vraie sur ses parents biologiques. Résolue à démêler le
+            vrai du faux quant aux circonstances de son abandon, Emily Casterman
+            prend la route pour aller à la rencontre des témoins de la fragile
+            idylle dont elle est le fruit. Tenant de l'album de famille, The One
+            Dollar Story raconte son enquête à travers les grands espaces
+            américains.
+          </p>
+          <button>Découvrir la pièce</button>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
