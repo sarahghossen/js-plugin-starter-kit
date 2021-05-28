@@ -1,21 +1,21 @@
 @font-face {
   font-family: "FuturaProspero";
-  src: url("src/FuturaProspero-Bold.woff") format("woff");
+  src: url("FuturaProspero-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Superpose-Bold";
-  src: url("src/Superpose-Bold.woff") format("woff");
+  src: url("Superpose-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Superpose-Regular";
-  src: url("src/Superpose-Regular.woff") format("woff");
+  src: url("Superpose-Regular.woff") format("woff");
 }
 
 html {
   background-color: #d5d6cc;
-  margin: 0;
+  margin: 15px;
 }
 
 .dropbtn {
@@ -102,7 +102,7 @@ main h2 {
 }
 
 .image1 {
-  border-radius: 8px;
+  border-radius: 10px;
   width: 50vw;
 }
 
@@ -110,8 +110,9 @@ main h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .principal-section p {
@@ -119,13 +120,13 @@ main h2 {
   margin: 10px;
 }
 
-.principal-section button {
+.principal-section a {
   background-color: black;
   color: #d5d6cc;
   text-decoration: none;
   outline: none;
   border: none;
-  padding: 10px;
+  padding: 10px 17vw;
   border-radius: 5px;
   font-family: Superpose-Regular;
   width: 45vw;
@@ -159,4 +160,52 @@ main h2 {
 
 .principal-date-section div {
   width: 20vw;
+}
+
+.intime-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intime-section {
+  margin: 10px;
+}
+
+.image2 {
+  width: 31vw;
+  border-radius: 10px;
+}
+
+.intime-titles {
+  font-size: 4em;
+  font-family: FuturaProspero;
+  text-align: center;
+  line-height: 0.8;
+  letter-spacing: -6px;
+  border-bottom: 1px solid black;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.intime-date-section {
+  display: flex;
+  justify-content: space-around;
+  font-family: Superpose-Regular;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.intime-section a {
+  background-color: black;
+  color: #d5d6cc;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  padding: 10px 10vw;
+  border-radius: 5px;
+  font-family: Superpose-Regular;
+  width: 45vw;
+  cursor: pointer;
+  font-size: 17px;
 }
